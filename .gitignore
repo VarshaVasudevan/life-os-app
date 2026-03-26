@@ -172,6 +172,13 @@ keys/
 .stylelintcache
 .prettiercache
 
+# ------------------- Project Specific -------------------
+# Screenshots (if you want to exclude)
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
 !README.md
 
 # User data
