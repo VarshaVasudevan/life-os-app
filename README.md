@@ -107,3 +107,5 @@ npm run dev
 # Run frontend (Terminal 2)
 cd frontend
 npm run dev
+## Deployment Status
+✅ Deployed on Vercel
