@@ -11,23 +11,19 @@ dotenv.config();
 
 const app = express();
 
-// CORS configuration - Updated for production
+// CORS configuration
 const allowedOrigins = [
   'http://localhost:3000',
   'https://life-os-frontend.vercel.app',
-  'https://life-os-frontend-git-main.vercel.app',
   process.env.CLIENT_URL
 ].filter(Boolean);
 
 app.use(cors({
   origin: function(origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
-    
     if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV !== 'production') {
       callback(null, true);
     } else {
-      console.log('Blocked origin:', origin);
       callback(new Error('Not allowed by CORS'));
     }
   },
@@ -45,7 +41,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cookieParser());
 
-// Morgan logging - use 'combined' for production
+// Morgan logging
 if (process.env.NODE_ENV === 'production') {
   app.use(morgan('combined'));
 } else {
@@ -82,7 +78,6 @@ app.use((req, res) => {
 app.use((err, req, res, next) => {
   console.error('Error:', err.stack);
   
-  // Handle specific error types
   if (err.name === 'UnauthorizedError') {
     return res.status(401).json({ message: 'Invalid token' });
   }
@@ -97,13 +92,13 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Connect to MongoDB with better error handling
+// ============================================
+// FIXED MONGODB CONNECTION - NO DEPRECATED OPTIONS
+// ============================================
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    // Simply connect without deprecated options
+    await mongoose.connect(process.env.MONGODB_URI);
     console.log('✅ MongoDB connected successfully');
     console.log(`📊 Database: ${mongoose.connection.name}`);
     console.log(`🌐 Host: ${mongoose.connection.host}`);
@@ -120,7 +115,6 @@ connectDB().then(() => {
   app.listen(PORT, () => {
     console.log(`\n🚀 Server running on port ${PORT}`);
     console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`🔗 CORS enabled for: ${allowedOrigins.join(', ')}`);
     console.log(`📡 API URL: http://localhost:${PORT}/api/health\n`);
   });
 });
