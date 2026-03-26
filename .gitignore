@@ -197,4 +197,7 @@ docs/generated/
 
 # Keep README but exclude others
 !README.md
-!*.md
+!*.mdscreenshots/
+*.png
+*.jpg
+*.jpeg
