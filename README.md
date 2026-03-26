@@ -1,4 +1,3 @@
-# life-os-app
 # 🧬 Life OS - Personal Operating System
 
 A complete life management app to track your goals, health, finances, relationships, and tasks.
@@ -11,20 +10,27 @@ A complete life management app to track your goals, health, finances, relationsh
 |---|---|
 | **Login Page** | **Register Page** |
 | ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
-| **Dashboard** | **Stats Cards** |
-| ![Dashboard](screenshots/dashboard.png) 
+
+| **Dashboard** |
+| ![Dashboard](screenshots/dashboard.png) |
+
 | **Goals** | **Create Goal** |
 | ![Goals](screenshots/goals.png) | ![Create Goal](screenshots/add-goal.png) |
-| **Health** | **Log Health** |
-| ![Health](screenshots/health.png) 
+
+| **Health** |
+| ![Health](screenshots/health.png) |
+
 | **Finance** | **Add Transaction** |
 | ![Finance](screenshots/finance.png) | ![Add Transaction](screenshots/add-transaction.png) |
+
 | **Relationships** | **Add Person** |
 | ![Relationships](screenshots/relationships.png) | ![Add Person](screenshots/add-person.png) |
+
 | **Tasks** | **Create Task** |
 | ![Tasks](screenshots/tasks.png) | ![Create Task](screenshots/add-task.png) |
-| **Insights** | |
-| ![Insights](screenshots/insights.png) | |
+
+| **Insights** |
+| ![Insights](screenshots/insights.png) |
 
 ---
 
