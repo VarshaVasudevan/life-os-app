@@ -48,72 +48,7 @@ A comprehensive life management platform that helps you track, monitor, and impr
 | **Insights** |
 | ![Insights](screenshots/insights.png) |
 
----
 
-## ✨ **Key Features**
-
-| Module | Features |
-|--------|----------|
-| **🎯 Goals** | Set SMART goals, track progress, add milestones, categorize by life areas |
-| **💪 Health** | Log daily metrics (steps, sleep, mood, water), view health trends, get wellness tips |
-| **💰 Finance** | Track income/expenses, categorize transactions, visualize spending patterns |
-| **👥 Relationships** | Manage connections, track important dates, log interactions, never miss birthdays |
-| **✅ Tasks** | Organize tasks with priorities, set due dates, filter by status and category |
-| **🤖 Insights** | AI-powered personalized recommendations based on your activity patterns |
-
-
-
-## 🛠️ **Tech Stack**
-
-### Frontend
-- **Next.js 15** - React framework with App Router
-- **React 19** - UI library
-- **React Bootstrap** - Component library
-- **Chart.js** - Data visualization
-- **Axios** - HTTP client
-- **React Hot Toast** - Toast notifications
-
-### Backend
-- **Node.js** - Runtime environment
-- **Express.js** - Web framework
-- **MongoDB** - NoSQL database
-- **Mongoose** - ODM for MongoDB
-- **JWT** - Authentication
-- **bcryptjs** - Password hashing
-
----
-
-
-
-## 📸 Screenshots
-
-| | |
-|---|---|
-| **Login Page** | **Register Page** |
-| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
-
-| **Dashboard** |
-| ![Dashboard](screenshots/dashboard.png) |
-
-| **Goals** | **Create Goal** |
-| ![Goals](screenshots/goals.png) | ![Create Goal](screenshots/add-goal.png) |
-
-| **Health** |
-| ![Health](screenshots/health.png) |
-
-| **Finance** | **Add Transaction** |
-| ![Finance](screenshots/finance.png) | ![Add Transaction](screenshots/add-transaction.png) |
-
-| **Relationships** | **Add Person** |
-| ![Relationships](screenshots/relationships.png) | ![Add Person](screenshots/add-person.png) |
-
-| **Tasks** | **Create Task** |
-| ![Tasks](screenshots/tasks.png) | ![Create Task](screenshots/add-task.png) |
-
-| **Insights** |
-| ![Insights](screenshots/insights.png) |
-
----
 
 ## ✨ **Key Features**
 
