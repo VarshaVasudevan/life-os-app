@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  experimental: {
-    turbo: false,
+  images: {
+    domains: ['localhost', 'life-os-backend-l84h.onrender.com'],
   },
 }
 
-export default nextConfig
+module.exports = nextConfig
