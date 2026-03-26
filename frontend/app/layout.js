@@ -1,11 +1,10 @@
-import './globals.css'
-import { AuthProvider } from '../context/AuthContext'
-import { Toaster } from 'react-hot-toast'
+import './globals.css';
+import { AuthProvider } from '@/context/AuthContext';
 
 export const metadata = {
   title: 'Life OS - Your Personal Operating System',
-  description: 'Manage your goals, health, finances, relationships and tasks in one place',
-}
+  description: 'Manage your goals, health, finances, relationships and tasks',
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -16,5 +15,5 @@ export default function RootLayout({ children }) {
         </AuthProvider>
       </body>
     </html>
-  )
+  );
 }

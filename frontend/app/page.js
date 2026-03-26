@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import LoadingSpinner from '@/components/common/LoadingSpinner';
 
 export default function Home() {
   const router = useRouter();
@@ -16,5 +15,15 @@ export default function Home() {
     }
   }, [router]);
 
-  return <LoadingSpinner />;
+  return (
+    <div style={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      minHeight: '100vh',
+      background: '#E5E4E2'
+    }}>
+      <div>Redirecting...</div>
+    </div>
+  );
 }
