@@ -1,0 +1,200 @@
+# ============================================
+# Life OS - Complete .gitignore
+# ============================================
+
+# ------------------- Dependencies -------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ------------------- Environment Files -------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
+.env.*.local
+
+# ------------------- Build Outputs -------------------
+# Next.js
+.next/
+out/
+build/
+dist/
+.nuxt/
+.cache/
+
+# Backend
+dist/
+build/
+
+# ------------------- IDE / Editor -------------------
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.history/
+*.code-workspace
+
+# IntelliJ / WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.~*
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# ------------------- OS Generated -------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+*.bak
+
+# ------------------- Testing -------------------
+coverage/
+.nyc_output/
+*.lcov
+jest-coverage/
+test-results/
+playwright-report/
+
+# ------------------- Logs -------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ------------------- Database -------------------
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+mongodb-data/
+data/
+
+# ------------------- Temporary Files -------------------
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# ------------------- Docker -------------------
+docker-compose.override.yml
+*.pid
+*.seed
+*.pid.lock
+
+# ------------------- Next.js Specific -------------------
+.next/
+out/
+build/
+dist/
+.vercel/
+.netlify/
+.svelte-kit/
+
+# ------------------- Backend Specific -------------------
+# MongoDB
+mongodb-data/
+dump/
+
+# Uploads
+uploads/
+public/uploads/
+storage/
+media/
+
+# ------------------- Security -------------------
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+secrets/
+keys/
+.credentials/
+
+# ------------------- Misc -------------------
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.pem
+*.crt
+*.key
+.ftpconfig
+.remote-sync.json
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# ------------------- Project Specific -------------------
+# Screenshots (if you want to exclude)
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+!README.md
+
+# User data
+user-data/
+profiles/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# ------------------- Documentation -------------------
+# Exclude generated docs
+docs/api/
+docs/generated/
+
+# Keep README but exclude others
+!README.md
+!*.md
