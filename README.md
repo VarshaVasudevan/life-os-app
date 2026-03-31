@@ -107,5 +107,88 @@ npm run dev
 # Run frontend (Terminal 2)
 cd frontend
 npm run dev
-## Deployment Status
-✅ Deployed on Vercel
+✨ Key Features
+Module	Features
+🎯 Goals	Set SMART goals, track progress, add milestones, categorize by life areas
+💪 Health	Log daily metrics (steps, sleep, mood, water), view health trends, get wellness tips
+💰 Finance	Track income/expenses, categorize transactions, visualize spending patterns
+👥 Relationships	Manage connections, track important dates, log interactions, never miss birthdays
+✅ Tasks	Organize tasks with priorities, set due dates, filter by status and category
+🤖 Insights	AI-powered personalized recommendations based on your activity patterns
+🛠️ Tech Stack
+
+Frontend
+---------------
+Next.js 15 - React framework with App Router
+React 19 - UI library
+React Bootstrap - Component library
+Chart.js - Data visualization
+Axios - HTTP client
+React Hot Toast - Toast notifications
+Backend
+------------
+Node.js - Runtime environment
+Express.js - Web framework
+MongoDB - NoSQL database
+Mongoose - ODM for MongoDB
+JWT - Authentication
+bcryptjs - Password hashing
+⚡ Quick Start
+# Clone repository
+git clone https://github.com/VarshaVasudevan/life-os-app
+cd life-os
+
+# Install backend
+cd backend
+npm install
+
+# Install frontend
+cd ../frontend
+npm install
+
+# Setup environment
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env.local
+
+# Run backend (Terminal 1)
+cd backend
+npm run dev
+
+# Run frontend (Terminal 2)
+cd frontend
+npm run dev
+
+## ✨ **Deployment steps**
+
+The Life OS application is deployed using Vercel for the frontend. Follow the steps below to deploy your own instance.
+
+🌐 Frontend Deployment (Vercel)
+Push your code to GitHub:
+git push origin main
+Go to https://vercel.com and sign in with GitHub.
+Click New Project → Import the repository.
+Configure project settings:
+Framework Preset: Next.js
+Root Directory: frontend
+Add environment variables (from frontend/.env.local) in Vercel:
+NEXT_PUBLIC_API_URL
+Any other required frontend env variables
+Click Deploy 🚀
+🔧 Backend Deployment (Optional)
+
+Deploy the backend using platforms like:
+
+Render
+Railway
+AWS / DigitalOcean
+
+Steps:
+
+Deploy the backend/ folder
+Add backend environment variables (.env)
+Update frontend NEXT_PUBLIC_API_URL with the deployed backend URL
+Deployment Status
+
+✅ Frontend deployed on Vercel
+
+🔗 Live URL: https://life-os-app-red.vercel.app/login
