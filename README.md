@@ -1,8 +1,9 @@
 # 🧬 Life OS - Personal Operating System
 
-A comprehensive life management platform that helps you track, monitor, and improve all aspects of your life in one unified dashboard.
+## 🌐 Live Demo
+🔗 https://life-os-app-red.vercel.app/login
 
----
+A comprehensive life management platform that helps you track, monitor, and improve all aspects of your life in one unified dashboard.
 
 ## 🎯 **Project Goals**
 
